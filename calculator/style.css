@@ -1,0 +1,70 @@
+body {
+    display: grid;
+    grid-template-areas:
+    'err err err'
+    'operation operation operation'
+    'num1 num1 num1'
+    'num2 num2 num2';
+    gap: 10px;
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+}
+
+input {
+    border-radius: 3px;
+}
+
+#operation {
+    grid-area: operation;
+}
+
+#operation:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+
+#number1 {
+    grid-area: num1;
+    cursor: pointer;
+}
+
+#number1:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+#number2 {
+    grid-area: num2;
+}
+
+#number2:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+}
+#submit {
+    margin: 0;
+    position: absolute;
+    top: 130%;
+    left: 130%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#res {
+    color: black;
+}
+
+#error {
+    display: none;
+    grid-area: err;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <h1 id="error">Invalid input or currently not maintained operation</h1>
+
+    <div>
+        <label for="operation">Put Your Wanted Operation</label>
+        <input type="text" id="operation">
+    </div>
+    <div>
+        <label for="number1">Put Number One</label>
+        <input type="text" id="number1">
+    </div>
+
+    <div>
+        <label for="number2">Put Number Two:</label>
+        <input type="text" id="number2">
+    </div>
+
+    <div class="btn">
+        <button id="submit" onclick="calculator()">Submit</button>
+    </div>
+
+    <div class="result">
+        <label for="res">Result:</label>
+        <input type="text" id="res" disabled>
+    </div>
+
+    <script>
+        window.onreset = reset();
+    </script>
+</body>
+</html>
