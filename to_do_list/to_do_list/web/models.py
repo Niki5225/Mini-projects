@@ -6,10 +6,11 @@ from django.contrib.auth import models as auth_models
 # Create your models here.
 
 class AppUser(auth_models.AbstractUser):
-    email = models.EmailField(
+    username = models.CharField(
         null=False,
         blank=False,
         unique=True,
+        max_length=60,
     )
 
     password = models.CharField(

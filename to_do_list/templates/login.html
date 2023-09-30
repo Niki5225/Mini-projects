@@ -8,8 +8,8 @@
 
 </head>
 <body>
-<form class="form" method="post" action="{% url 'register' %}">
-    <h1>Register</h1>
+<form class="form" method="post" action="{% url 'login' %}">
+    <h1>Login</h1>
     {% csrf_token %}
     {{ form }}
 

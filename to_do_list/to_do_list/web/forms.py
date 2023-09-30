@@ -7,4 +7,8 @@ UserModel = get_user_model()
 class RegisterUserForm(forms.ModelForm):
     class Meta:
         model = UserModel
-        fields = '__all__'
+        fields = ('username', 'password')
+
+        widgets = {
+            'password': forms.TextInput(attrs={'type': 'password'}),
+        }

@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+
+.form {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.form input {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.form input:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: green;
+}
